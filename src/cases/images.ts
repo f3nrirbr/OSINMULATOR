@@ -1,12 +1,13 @@
 // Fotos dos casos, empacotadas pelo Vite. Indexadas por pasta do caso.
-// .jpg/.jpeg/.png/.gif — as artes de marca (pasta /imgs/logos) ficam de fora.
-const files = import.meta.glob('../../imgs/*/*.{jpg,jpeg,png,gif}', { eager: true, import: 'default' }) as Record<string, string>
+// .jpg/.jpeg/.png/.gif/.svg — as artes de marca (pasta /imgs/logos) ficam de fora.
+// (.svg entrou para o case_04, cujas artes de personagens/prints são mockups autorais.)
+const files = import.meta.glob('../../imgs/*/*.{jpg,jpeg,png,gif,svg}', { eager: true, import: 'default' }) as Record<string, string>
 
 // byFolder['case_01']['thor'] -> url
 const byFolder: Record<string, Record<string, string>> = {}
 for (const path in files) {
   const parts = path.split('/')
-  const name = parts.pop()!.replace(/\.(jpg|jpeg|png|gif)$/i, '')
+  const name = parts.pop()!.replace(/\.(jpg|jpeg|png|gif|svg)$/i, '')
   const folder = parts.pop()!
   if (folder === 'logos') continue // marca/brand, não é foto de caso
   ;(byFolder[folder] ??= {})[name] = files[path]
