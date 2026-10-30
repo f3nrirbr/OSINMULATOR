@@ -15,7 +15,7 @@ import { caseImage } from './cases/images'
 import logoUrl from '../imgs/logos/osinmulator_logo.png'
 import './styles/base.css'
 
-const GITHUB_URL = 'https://github.com/JoabeEmanuelNKautnick/OSINMULATOR'
+const GITHUB_URL = 'https://github.com/f3nrirbr/OSINMULATOR'
 
 function Landing() {
   const [picked, setPicked] = useState<Case | null>(null)

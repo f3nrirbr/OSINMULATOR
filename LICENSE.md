@@ -1,6 +1,6 @@
 # Licença de Uso — OSINT Simulator
 
-Copyright (c) 2026 Joabe Emanuel N. Kautnick ([@JoabeEmanuelNKautnick](https://github.com/JoabeEmanuelNKautnick))
+Copyright (c) 2026 Joabe Emanuel N. Kautnick ([@JoabeEmanuelNKautnick](https://github.com/f3nrirbr))
 
 Este é um projeto **educativo** sobre privacidade e conscientização digital.
 Esta licença define, em linguagem simples, o que você pode e o que não pode
@@ -30,7 +30,7 @@ Se você usar este projeto — no todo ou em parte, original ou modificado —
 
 - o nome do autor: **Joabe Emanuel N. Kautnick**;
 - um link para o repositório original:
-  <https://github.com/JoabeEmanuelNKautnick/OSINMULATOR>.
+  <https://github.com/f3nribr/OSINMULATOR>.
 
 ## 🚫 O que é PROIBIDO
 
